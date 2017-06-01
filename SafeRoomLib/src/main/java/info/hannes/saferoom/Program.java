@@ -1,4 +1,4 @@
-package com.commonsware.android.saferoom;
+package info.hannes.saferoom;
 
 import android.arch.persistence.db.SupportSQLiteProgram;
 

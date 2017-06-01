@@ -22,9 +22,9 @@ import android.arch.persistence.room.Room;
 import android.arch.persistence.room.RoomDatabase;
 import android.content.Context;
 
-import com.commonsware.android.saferoom.HelperFactory;
-
 import java.util.List;
+
+import info.hannes.saferoom.HelperFactory;
 
 @Database(entities = {Constant.class}, version = 1)
 public abstract class ConstantsDatabase extends RoomDatabase {

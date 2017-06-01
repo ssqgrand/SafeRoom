@@ -1,4 +1,4 @@
-package com.commonsware.android.saferoom;
+package info.hannes.saferoom;
 
 import android.arch.persistence.db.SupportSQLiteDatabase;
 import android.arch.persistence.db.SupportSQLiteQuery;
@@ -20,9 +20,6 @@ import net.sqlcipher.database.SQLiteQuery;
 import java.io.IOException;
 import java.util.List;
 import java.util.Locale;
-
-//import android.database.sqlite.SQLiteDatabase;
-//import android.database.sqlite.SQLiteTransactionListener;
 
 public class Database implements SupportSQLiteDatabase {
     private static final String[] EMPTY_STRING_ARRAY = new String[0];

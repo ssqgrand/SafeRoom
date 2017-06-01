@@ -1,4 +1,4 @@
-apply plugin: 'com.android.application'
+apply plugin: 'com.android.library'
 
 android {
     compileSdkVersion 25
@@ -7,7 +7,6 @@ android {
     defaultConfig {
         minSdkVersion 15
         targetSdkVersion 25
-        applicationId 'com.commonsware.android.room.safe'
         versionCode 1
         versionName "1.0"
 
@@ -20,9 +19,7 @@ android {
 }
 
 dependencies {
-    compile project(':SafeRoomLib')
-
-    //needed to generate database implementation
+    compile 'net.zetetic:android-database-sqlcipher:3.5.6@aar'
     compile "android.arch.persistence.room:runtime:1.0.0-alpha1"
     annotationProcessor "android.arch.persistence.room:compiler:1.0.0-alpha1"
 }
